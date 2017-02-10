@@ -194,10 +194,13 @@
             <!-- /page content -->
 
             <!-- footer content -->
-            <footer>
-                <f:render section="Footer" optional="1"/>
-                <div class="clearfix"></div>
-            </footer>
+            <f:if condition="{f:render (section:'Footer', optional:1)}">
+                <footer>
+                    ABC
+                    <f:render section="Footer" optional="1"/>
+                    <div class="clearfix"></div>
+                </footer>
+            </f:if>
             <!-- /footer content -->
         </div>
     </div>
@@ -212,6 +215,7 @@
     <!-- Custom Theme Scripts -->
     <script src="{f:uri.resource(path:'node_modules/gentelella/build/js/custom.min.js', package:'KayStrobach.Gentelella')}"></script>
 
-    <f:render partial="Footer" optional="1" />
+    <f:render section="Footer" optional="1" />
+    <f:render section="footer" optional="1" />
     </body>
 </html>
