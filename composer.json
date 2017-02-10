@@ -1,0 +1,18 @@
+{
+    "description": "Add description here",
+    "type": "neos-package",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "name": "kaystrobach/gentelella",
+    "autoload": {
+        "psr-0": {
+            "KayStrobach\\Gentelella": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "KayStrobach.Gentelella"
+        }
+    }
+}
