@@ -1,0 +1,14 @@
+-
+  requestFilter: 'isPackage("KayStrobach.Menu") && isSubPackage("ViewHelpers\Widget") && isController("Menu") && isAction("index")'
+  options:
+    templatePathAndFilename: 'resource://KayStrobach.Gentelella/Private/Templates/ViewHelpers/Widget/Menu/Index.html'
+    partialRootPaths:
+      'KayStrobach.Gentelella/Partials':      'resource://KayStrobach.Gentelella/Private/Partials'
+-
+  requestFilter: 'isPackage("KayStrobach.Gentelella") && isFormat("html")'
+  options:
+    layoutRootPaths:
+      'KayStrobach.Gentelella/Layouts':       'resource://KayStrobach.Gentelella/Private/Layouts'
+    partialRootPaths:
+      'KayStrobach.Gentelella/Partials':      'resource://KayStrobach.Gentelella/Private/Partials'
+      'KayStrobach.Menu/Partials':            'resource://KayStrobach.Menu/Private/Partials'
